@@ -71,7 +71,7 @@ namespace MyShop.DataAccess.InMemory
         {
             T tToDelete = items.Find(i => i.Id == Id);
 
-            if (tToDelete == null)
+            if (tToDelete != null)
             {
                 items.Remove(tToDelete);
             }
